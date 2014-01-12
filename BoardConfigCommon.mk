@@ -34,7 +34,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/s4-common
 TARGET_SPECIFIC_HEADER_PATH := device/htc/s4-common/include
 
 # Kernel
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 BOARD_KERNEL_BASE := 0x80400000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
