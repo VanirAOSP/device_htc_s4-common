@@ -38,7 +38,9 @@ BOARD_KERNEL_BASE := 0x80400000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
+ifneq ($(TARGET_DEVICE),ville)
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
+endif
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
