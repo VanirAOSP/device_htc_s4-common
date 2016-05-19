@@ -194,6 +194,7 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     class core
     user root
+    group root readproc
     disabled
 
 service netmgrd /system/bin/netmgrd
