@@ -53,9 +53,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
-# Recovery
-BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-
 # Shims
 PRODUCT_PACKAGES += \
     libshim_camera \
