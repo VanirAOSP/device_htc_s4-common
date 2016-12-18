@@ -187,6 +187,7 @@ service fm_dl /system/bin/setprop hw.fm.init 1
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     user bluetooth
     group qcom_oncrpc bluetooth net_bt_admin system
+    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
 
@@ -223,6 +224,7 @@ service qmuxd /system/bin/qmuxd
 service rmt_storage /system/bin/rmt_storage modem_st1 modem_st2 recovery radio_config
     class core
     user root
+    seclabel u:r:rmt_storage:s0
 
 service thermald /system/bin/thermald
     class core
