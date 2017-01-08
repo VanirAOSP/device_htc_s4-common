@@ -43,6 +43,12 @@ lib/libmmstillomx.so
 lib/liboemcamera.so
 lib/libposteffect.so
 
+# DRM
+lib/libdrmdecrypt.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
+
 # GPS
 lib/libgeofence.so
 lib/libloc_api_v02.so
@@ -80,11 +86,12 @@ lib/libmm-color-convertor.so
 vendor/lib/libqc-opt.so
 
 # Widevine
-lib/libdrmdecrypt.so
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.mdt
 vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libQSEEComAPI.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so

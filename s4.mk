@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
     camera.msm8960 \
     Snap
 
+# Charger
+WITH_CM_CHARGER := false
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8960
@@ -51,7 +54,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
 # Recovery
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 # Shims
 PRODUCT_PACKAGES += \
