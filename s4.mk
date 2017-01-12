@@ -30,8 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8960 \
-    Snap
+    camera.msm8960
 
 # Charger
 WITH_CM_CHARGER := false
