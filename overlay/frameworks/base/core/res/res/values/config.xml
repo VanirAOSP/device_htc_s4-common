@@ -96,9 +96,6 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
-    <!-- Set to false to enable CRT-off animation. -->
-    <bool name="config_animateScreenLights">false</bool>
-
     <!-- Default color for notification LED is green. -->
     <color name="config_defaultNotificationColor">#ff00ff00</color>
 
@@ -106,7 +103,9 @@
     <integer name="config_defaultNotificationLedOn">1000</integer>
 
     <!-- Default LED off time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOff">9000</integer>
+    <!-- HTC: Not milliseconds. Match to a state value from
+         notification_pulse_length_values in CMParts -->
+    <integer name="config_defaultNotificationLedOff">2</integer>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
