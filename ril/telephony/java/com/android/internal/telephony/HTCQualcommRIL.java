@@ -85,13 +85,6 @@ public class HTCQualcommRIL extends RIL implements CommandsInterface {
 
         p.setDataPosition(dataPosition);
 
-        // force CDMA + LTE network mode
-        boolean forceCdmaLte = needsOldRilFeature("forceCdmaLteNetworkType");
-
-        if (forceCdmaLte) {
-            setPreferredNetworkType(NETWORK_MODE_LTE_CDMA_EVDO, null);
-        }
-
         return super.responseIccCardStatus(p);
     }
 
