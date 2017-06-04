@@ -205,7 +205,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
 service qmuxd /system/bin/qmuxd
     class core
     user radio
-    group radio audio gps
+    group qcom_diag radio audio gps
 
 service rmt_storage /system/bin/rmt_storage modem_st1 modem_st2 recovery radio_config
     class core
